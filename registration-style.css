@@ -1,0 +1,142 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #094f51, #493d17, #aa8e54, #a9a586, #0d4b41);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInBody 1s ease forwards;
+}
+
+/* Background Fade In */
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Registration Container */
+.registration-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1.2s ease;
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading Style */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Placeholder text color */
+.form-group input::placeholder {
+    color: #f0f0f0;
+}
+
+/* Focus Effect */
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover Effect */
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Click (Active) Effect */
+.register-btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer Section */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Link in Footer */
+.form-footer a {
+    color: #00ffe7;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

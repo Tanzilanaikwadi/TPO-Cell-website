@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <h2 class="logo">Student Portal</h2>
+      <ul class="nav-links">
+        <li><a href="/dashboard.html">Dashboard</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#status">Applied Status</a></li>
+        <li><a href="login.html" class="logout-link">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dashboard Section -->
+
+    <section id="dashboard" class="section dashboard">
+  <h1>Welcome, Student!</h1>
+  <p>Your personalized dashboard with job opportunities and application tracking.</p>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h3>10</h3>
+      <p>Total Jobs</p>
+    </div>
+    <div class="stat-box">
+      <h3>3</h3>
+      <p>Applied Jobs</p>
+    </div>
+    <div class="stat-box">
+      <h3>1</h3>
+      <p>Shortlisted</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Job Opportunities Section -->
+    <section id="jobs" class="section jobs-section">
+      <h2>Job Opportunities</h2>
+
+      <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <p><strong>Company:</strong> CodeCraft</p>
+        <p><strong>Location:</strong> Hybrid</p>
+        <p><strong>Duration:</strong> 2 Months</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+      
+      
+      <div class="job-card">
+        <h3>Web Developer Intern</h3>
+        <p><strong>Company:</strong>ECS software</p>
+        <p><strong>Location:</strong> Remote</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+      
+      <div class="job-card">
+        <h3>Android Developer</h3>
+        <p><strong>Company:</strong> CodeCraft</p>
+        <p><strong>Location:</strong> Remote</p>
+        <p><strong>Duration:</strong> 8 Months</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+      
+      <div class="job-card">
+        <h3>full stack Developer</h3>
+        <p><strong>Company:</strong> CodeCraft</p>
+        <p><strong>Location:</strong> Remote</p>
+        <p><strong>Duration:</strong> 12 Months</p>
+        <p><strong>Salary:</strong> ₹25,000/month</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+      
+      <div class="job-card">
+        <h3>wordpress Developer Intern</h3>
+        <p><strong>Company:</strong> cyscon tech </p>
+        <p><strong>Location:</strong> Remote</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <p><strong>Salary:</strong> ₹25,000/month</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+
+      <div class="job-card">
+        <h3>Graphic Designer</h3>
+        <p><strong>Company:</strong> PixelHouse</p>
+        <p><strong>Location:</strong> Delhi</p>
+        <p><strong>Salary:</strong> ₹20,000/month</p>
+        <a href="/jobapplication.html" class="apply-btn">Apply Now</a>
+      </div>
+    </section>
+
+    <!-- Applied Status Section -->
+    <section id="status" class="section applied-status">
+      <h2>Applied Job Status</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Developer Intern</td>
+            <td>CodeCraft</td>
+            <td class="status pending">Pending</td>
+          </tr>
+          
+          <tr>
+            <td>UI/UX Designer</td>
+            <td>DesignHub</td>
+            <td class="status shortlisted">Shortlisted</td>
+          </tr>
+          <tr>
+            <td>Marketing Assistant</td>
+            <td>MarketMind</td>
+            <td class="status rejected">Rejected</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>    
+</body>
+</html>

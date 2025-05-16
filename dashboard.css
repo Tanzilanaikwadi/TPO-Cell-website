@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    line-height: 1.6;
+  }
+  /* Center the dashboard section content */
+#dashboard {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  /* Center and style the stat boxes */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    width: 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .stat-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .main-container {
+    padding-top: 70px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+  }
+  
+  .logo {
+    color: #00ffe7;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .logout-link:hover {
+    color: #00ffe7;
+  }
+  
+  .section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Dashboard Greeting + Stats */
+  .dashboard h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    flex: 1;
+    min-width: 180px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #00ffe7;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Job Section */
+  .jobs-section h2, 
+  .applied-status h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .job-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00ffe7;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .job-card h3 {
+    color: #00ffe7;
+    margin-bottom: 10px;
+  }
+  
+  .apply-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #00ffe7;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: #00c9b7;
+  }
+  
+  /* Applied Status Table */
+  .applied-status table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .applied-status th,
+  .applied-status td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .applied-status th {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .status {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .status.pending {
+    color: orange;
+  }
+  
+  .status.shortlisted {
+    color: #00ff99;
+  }
+  
+  .status.rejected {
+    color: #ff5252;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #00ffe7;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: #00c9b7;
+  }
+  
+  
