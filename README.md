@@ -29,7 +29,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/tpo-cell-website.git  
+git clone https://github.com/tanzillanaikwadi/tpo-cell-website.git  
 Set up your local server (e.g., XAMPP for PHP or Flask for Python).
 
 Import the database.sql file into MySQL.
